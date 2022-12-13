@@ -21,3 +21,19 @@ html {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+body {
+    background-color: #131518;
+    color: #FFFFFF;
+}
+
+.thanks {
+    display: none;
+}
+
+.container {
+    width: 327px;
+    height: 360px;
+    background-image: linear-gradient (to bottom rgba(35, 42, 52, 1), 60%, rgba(24, 30, 39, 1));
+}
+
