@@ -30,6 +30,40 @@ body {
 }
 
 .thanks {
+  //visibility: hidden;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 144px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .box-selected {
+    text-align: center;
+
+    .you-selected {
+      font-size: 14px;
+      text-align: center;
+      color: #fc7614 !important;
+      background-color: #262e38;
+      border-radius: 25px;
+      padding: 6px 14px;
+      display: inline-block;
+      margin: 15px auto 0 auto;
+    }
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+}
+
+.rate {
   display: none;
 }
 
