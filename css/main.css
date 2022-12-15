@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -21,15 +22,133 @@ html {
 
 body {
   background-color: #131518;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: "Overpass", sans-serif;
 }
 
 .thanks {
   display: none;
 }
 
-.container {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper .container {
   width: 327px;
   height: 360px;
-  background-image: linear-gradient to bottom rgb(35, 42, 52), 60%, rgb(24, 30, 39);
+  background-image: radial-gradient(farthest-corner at 50% 0%, #232a34 0%, #181e27 100%);
+  border-radius: 15px;
+  align-self: center;
+  padding: 24px;
+  position: relative;
+}
+.wrapper .container .star {
+  width: 40px;
+  height: 40px;
+  background-color: #262e38;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .star::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.wrapper .container h1 {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 22px 0 14px 0;
+  letter-spacing: 1px;
+}
+.wrapper .container p {
+  color: #969fad;
+  font-size: 14px;
+  line-height: 22px;
+}
+.wrapper .container fieldset {
+  border: none;
+  display: flex;
+  margin: 20px 0 22px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .container fieldset .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container fieldset input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #262e38;
+  margin: 0;
+  font-family: inherit;
+  color: #7c8798;
+  width: 3.1em;
+  height: 3.1em;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.wrapper .container fieldset input[type=radio]:hover {
+  background-color: #fc7614;
+  cursor: pointer;
+}
+.wrapper .container fieldset input[type=radio]:checked {
+  background-color: #fc7614;
+  cursor: pointer;
+}
+.wrapper .container fieldset input[type=radio]:active {
+  background-color: #7c8798;
+  cursor: pointer;
+}
+.wrapper .container fieldset label {
+  position: absolute;
+  margin: 0;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #7c8798;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wrapper .container fieldset label:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+.wrapper .container fieldset label .checked {
+  color: #ffffff;
+  cursor: pointer;
+}
+.wrapper .container button {
+  display: inline-block;
+  width: 100%;
+  background-color: #fc7614;
+  padding: 13px;
+  font-family: "Overpass", sans-serif;
+  color: white;
+  font-size: 14px;
+  vertical-align: text-bottom;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.wrapper .container button:hover {
+  background-color: #ffffff;
+  color: #fc7614;
 }/*# sourceMappingURL=main.css.map */
