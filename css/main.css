@@ -11,21 +11,15 @@ html {
   margin: 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}
-
 body {
   background-color: #131518;
   color: #ffffff;
   font-family: "Overpass", sans-serif;
 }
 
+.thanks {
+  display: none;
+}
 .thanks h1,
 .thanks p {
   text-align: center;
@@ -38,7 +32,7 @@ body {
 .thanks .box-selected {
   text-align: center;
 }
-.thanks .box-selected .you-selected {
+.thanks .you-selected {
   font-size: 14px;
   text-align: center;
   color: #fc7614 !important;
@@ -50,10 +44,6 @@ body {
 }
 .thanks h1 {
   margin-top: 10px;
-}
-
-.rate {
-  display: none;
 }
 
 .wrapper {
@@ -150,12 +140,14 @@ body {
   color: #7c8798;
   font-weight: 700;
   cursor: pointer;
+  /*
+  &:checked {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  */
 }
 .wrapper .container fieldset label:hover {
-  color: #ffffff;
-  cursor: pointer;
-}
-.wrapper .container fieldset label .checked {
   color: #ffffff;
   cursor: pointer;
 }
@@ -177,4 +169,13 @@ body {
 .wrapper .container button:hover {
   background-color: #ffffff;
   color: #fc7614;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */

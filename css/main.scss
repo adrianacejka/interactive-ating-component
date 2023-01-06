@@ -1,4 +1,4 @@
-// ------------------------------------------------
+@charset 'utf-8';
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 html {
@@ -14,15 +14,6 @@ html {
 }
 // -------------------------------------------------
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 body {
   background-color: #131518;
   color: #ffffff;
@@ -30,7 +21,7 @@ body {
 }
 
 .thanks {
-  //visibility: hidden;
+  display: none;
 
   h1,
   p {
@@ -45,17 +36,17 @@ body {
 
   .box-selected {
     text-align: center;
+  }
 
-    .you-selected {
-      font-size: 14px;
-      text-align: center;
-      color: #fc7614 !important;
-      background-color: #262e38;
-      border-radius: 25px;
-      padding: 6px 14px;
-      display: inline-block;
-      margin: 15px auto 0 auto;
-    }
+  .you-selected {
+    font-size: 14px;
+    text-align: center;
+    color: #fc7614 !important;
+    background-color: #262e38;
+    border-radius: 25px;
+    padding: 6px 14px;
+    display: inline-block;
+    margin: 15px auto 0 auto;
   }
 
   h1 {
@@ -63,9 +54,9 @@ body {
   }
 }
 
-.rate {
-  display: none;
-}
+// .rate {
+//   display: none;
+// }
 
 .wrapper {
   display: flex;
@@ -179,10 +170,12 @@ body {
         }
 
         // ------- přidat javascriptem?
-        .checked {
+        /*
+        &:checked {
           color: #ffffff;
           cursor: pointer;
         }
+        */
       }
     }
 
@@ -207,4 +200,13 @@ body {
       color: #fc7614;
     }
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
